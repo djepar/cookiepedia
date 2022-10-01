@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { useState} from 'react'
 
@@ -17,7 +17,7 @@ function FilterableIngredientTable({ ingredients}) {
       filterText={filterText}
       inStockOnly={inStockOnly}  />
     </div>
-  )
+  );
 }
 function IngredientCategoryRow({ category }){
   return (
@@ -49,8 +49,9 @@ function IngredientTable({ ingredients, filterText, inStockOnly }){
 
   ingredients.forEach((ingredient) => {
     if (
-      ingredient.anme.toLowerCase().indexOf(filterText.toLowerCase() === -1)
-    ){
+      ingredient.name.toLowerCase().indexOf(
+        filterText.toLowerCase()
+        ) === -1) {
       return;
     }
     if (inStockOnly && !ingredient.stocked){
