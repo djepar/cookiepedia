@@ -1,10 +1,10 @@
-
 import './App.css';
 import { useState} from 'react'
 
 function FilterableIngredientTable({ ingredients}) {
   const [filterText, setFilterText] = useState('');
   const [inStockOnly, setInStockOnly] = useState(false);
+  
   return(
     <div>
       <SearchBar
@@ -51,7 +51,8 @@ function IngredientTable({ ingredients, filterText, inStockOnly }){
     if (
       ingredient.name.toLowerCase().indexOf(
         filterText.toLowerCase()
-        ) === -1) {
+      ) === -1
+    ) {
       return;
     }
     if (inStockOnly && !ingredient.stocked){
@@ -61,7 +62,7 @@ function IngredientTable({ ingredients, filterText, inStockOnly }){
       rows.push(
         <IngredientCategoryRow
         category={ingredient.category} 
-        key={ingredient.name}/>
+        key={ingredient.category}/>
       );
     }
     rows.push(
@@ -84,18 +85,17 @@ function IngredientTable({ ingredients, filterText, inStockOnly }){
   );
 }
 
-function SearchBar(
+function SearchBar({
   filterText,
   inStockOnly,
   onFilterTextChange,
   onInStockOnlyChange
-){
+}){
   return(
     <form>
       <input
        type="text" 
-       placeholder="Search..."
-       value={filterText}
+       value={filterText}  placeholder="Search..."
        onChange={(e) => onFilterTextChange(e.target.value)}  />
       <label>
         <input 

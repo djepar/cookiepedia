@@ -5,7 +5,7 @@ import App from './App';
 import ButtonIngr from './ButtonIngr'
 import Ingredients from './Ingredients';
 import Counter from './Counter'
-import MyApp from './Counter';
+import MyApp from './Counter'
 import CounterInd from './CounterInd';
 import TitleRow from './App';
 
