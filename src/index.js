@@ -8,6 +8,7 @@ import Counter from './Counter'
 import MyApp from './Counter'
 import CounterInd from './CounterInd';
 import TitleRow from './App';
+import Heading from './Heading';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,6 +19,7 @@ root.render(
     
     <CounterInd />
     <MyApp />*/}
+    <Heading />
     <App />
   </React.StrictMode>
 );
