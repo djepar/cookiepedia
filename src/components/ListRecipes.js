@@ -25,12 +25,14 @@ const recipes = [{
     diet : 'vegan',
 }    ];
 
-const veganRecipes = recipes.filter(recipe => recipe.diet === 'vegan');
+const veganRecipes = recipes.filter(recipe => 
+    recipe.diet === 'vegan'
+    );
 console.log(veganRecipes)
 export default function ListRecipes(){
 
     const listItems = veganRecipes.map(recipe => 
-        <li>{recipe}</li>);
+        <li key={recipe.id}>{recipe.name}</li>);
     return(
         <div>
             <h2>Recipes List</h2>

@@ -9,8 +9,7 @@ const INGREDIENTS = [
   { category: "wet", name:"lime juice",quantity: "15ml", stocked: true},
   { category: "wet", name:"unsalted butter",quantity: "115g", stocked: false},
   { category: "other", name:"sugar",quantity: "210g", stocked: true},
-  { category: "other", name:"egg",quantity: "1", stocked: true},
-  { category: "dry", name:"vanilla extract",quantity: "5ml", stocked: true},
+  { category: "other", name:"egg",quantity: "1", stocked: true}
   
   
   
