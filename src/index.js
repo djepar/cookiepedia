@@ -6,6 +6,7 @@ import Heading from './components/Heading';
 import ShoppingList from './components/ShoppingList';
 import ListRecipes from './components/ListRecipes'
 import Panel from './components/Panel';
+import Form from './components/ChangingRecipes';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
@@ -18,7 +19,7 @@ root.render(
       <ListRecipes />   
       
     </Panel>
-  
+    <Form />
    
   </React.StrictMode>
 );
