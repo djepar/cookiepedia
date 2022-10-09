@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import { BrowserRouter } from 'react-router-dom';
+import NavBar from "./components/NavBar"
 import App from './App';
 import Heading from './components/Heading';
 import ShoppingList from './components/ShoppingList';
@@ -9,17 +11,14 @@ import Panel from './components/Panel';
 import Form from './components/ChangingRecipes';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+
 root.render(
   <React.StrictMode>
-   
-    <Heading />
-    <Panel title="More content">
-      <ShoppingList />
-      <App />
-      <ListRecipes />   
-      
-    </Panel>
-    <Form />
+    <BrowserRouter>
+      <NavBar />
+    </BrowserRouter>
+
+
    
   </React.StrictMode>
 );
