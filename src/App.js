@@ -1,5 +1,6 @@
 import './App.css';
 import FilterableIngredientTable from "./components/FilterableIngredientTable"
+import cookie from './assets/cookie.jpg'
 
 const INGREDIENTS = [
   { category: "dry", name:"flour",quantity: "225g", stocked: true},
@@ -16,5 +17,18 @@ const INGREDIENTS = [
 ]
 
 export default function App(){
-  return <FilterableIngredientTable ingredients={INGREDIENTS} />
-}
+  return(
+    <div>
+      <h1>
+        Cookie
+      </h1>
+      <img
+        height={200}
+        src={cookie}
+        alt="A cookie"
+       />
+      <FilterableIngredientTable ingredients={INGREDIENTS} />
+
+    </div>
+    
+  ) }

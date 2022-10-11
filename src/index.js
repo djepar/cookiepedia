@@ -10,11 +10,15 @@ import ListRecipes from './components/ListRecipes'
 import Panel from './components/Panel';
 import Form from './components/ChangingRecipes';
 import CurrentDate from './components/CurrentDate';
+import MyVideo from './components/CookingVideo';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
 root.render(
+
   <React.StrictMode>
+    <MyVideo />
     <BrowserRouter>
       <NavBar />
     </BrowserRouter>
