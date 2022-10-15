@@ -10,7 +10,11 @@ function Ingredients(){
             {product.ingredient}
         </li>)
     return (
-        <ul>{IngredientItems}</ul>
+        <div>
+            <h2>Ingredients for X recipes</h2>
+            <ul>{IngredientItems}</ul>
+        </div>
+
 
     )
 }
