@@ -1,13 +1,13 @@
 
-function Steps(){
+function Steps({steps}){
     const products = [
         {steps : "Wisk", id: 1},
         {steps : "mix", id: 2},
         {steps : "bake at 300celsius for 3h", id: 3},
     ]
-    const stepsItems = products.map(product =>
-        <li key={product.id}>
-            {product.steps}
+    const stepsItems = steps.map(step =>
+        <li>
+            {step}
         </li>)
     return (
         <div>
