@@ -1,12 +1,19 @@
-import GenerationRecipe from "./GeneratingRecipe/GeneratingRecipe";
+import GeneratingRecipe from "./GeneratingRecipe/GeneratingRecipe";
 import germanpotatoes from "../assets/recipes/germanpotatoes.json";
 import test2  from "../assets/recipes/test2.json";
 import test3  from "../assets/recipes/test3.json";
+import useState from "react"
 import './style/recipes.css'
 function Recipes(){
-    return <div>
+    const [showRecipe, setRecipe] = useState("")
+
+    return (
+        <div>
+        {setRecipe !== "" ? <GeneratingRecipe recipe={showRecipe} /> : ""}
         <h1>Recipes list</h1>
-        <button onClick={<GenerationRecipe recipe={germanpotatoes} />}>German Potatoes</button>
+        <button onClick={() => setRecipe("germanpotatoes")}>German Potatoes</button>
         </div>
+
+    )
 }
 export default Recipes;

@@ -2,7 +2,7 @@ import Ingredients from "./Ingredients";
 import Steps from "./Steps";
 import Source from "./Source"
 
-function GenerationRecipe({recipe}){
+function GeneratingRecipe({recipe}){
     return (
         <div>
             <h2>{recipe.title}</h2>
@@ -13,4 +13,4 @@ function GenerationRecipe({recipe}){
     )
 }
 
-export default GenerationRecipe;
+export default GeneratingRecipe;
