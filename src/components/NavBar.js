@@ -1,5 +1,5 @@
 import Home from "./Home"
-import Recipes from "./Recipes";
+import Recipes from "./RecipesList";
 import {Routes, Route, Link } from 'react-router-dom';
 import cookie from '../assets/images/cookie-logo.png';
 import AboutUs from './AboutUs'
