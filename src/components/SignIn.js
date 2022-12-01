@@ -51,18 +51,18 @@ function SignIn(){
             <form onSubmit={handleSubmit}>
                 <fieldset>
                     <h2>Sign Up</h2>
-                <div className='Field'>
-                    <label>
-                        First name : <sup>*</sup>
-                    </label>    
-                    <input
-                    type='text' 
-                    value={firstName}
-                    onChange={ (e) => {
-                        setFirstName(e.target.value);
-                    }}
-                    placeholder='First name' />
-                </div>
+                    <div className='Field'>
+                        <label>
+                            First name : <sup>*</sup>
+                        </label>    
+                        <input
+                        type='text' 
+                        value={firstName}
+                        onChange={ (e) => {
+                            setFirstName(e.target.value);
+                        }}
+                        placeholder='First name' />
+                    </div>
                 <div className='Field'>
                     <label>
                         Last name : <sup>*</sup>
