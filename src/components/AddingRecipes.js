@@ -12,6 +12,8 @@ function AddingRecipes() {
     });
     const [recipeIngredients, setRecipeIngredients] = useState([]);
     const [recipeSteps, setRecipeSteps] = useState([]);
+    const [recipeIsVegan, setRecipeIsVegan] = useState(False);
+    const [recipeIsVege, setRecipeIsVege] = useState(False);
 
     const getIsFormValid = () => {
         return (
@@ -89,6 +91,29 @@ function AddingRecipes() {
                                 <li>ingredient</li>
                             ))}
                         </ul>
+                    </div>
+
+                    <div className='Field'>
+                        <label> Vegan</label>
+                        <input
+                        type='checkbox'
+                        checked={recipeIsVegan}
+                        onChange={ (e) => {
+                            setRecipeIsVegan(True)
+                        }}
+                        />
+                    </div>
+
+
+                    <div className='Field'>
+                        <label> Vegetarian</label>
+                        <input
+                        type='checkbox'
+                        checked={recipeIsVege}
+                        onChange={ (e) => {
+                            setRecipeIsVege(True)
+                        }}
+                        />
                     </div>
 
 {/* 
