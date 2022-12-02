@@ -1,0 +1,36 @@
+{
+    "meta": {
+      "schemaVersion": "0.0.0"
+    },
+    "title": "Côtelettes de porc à la moutarde à la mijoteuse",
+    "source": {
+      "author": "Ricardo",
+      "location": {
+        "url": "https://www.ricardocuisine.com/recettes/9418-cotelettes-de-porc-a-la-moutarde-a-la-mijoteuse",
+        "retrievalDate": "2022-11-26"
+      }
+    },
+    "ingredients": [
+      "675g de porc : tranches d'échine (l'équivalent de 4 côtelettes de porc, 2cm d'épaisseur)",
+      "30 ml (2c. à soupe) d'huile d'olive",
+      "2 gros oignons, émincés",
+      "30 ml (2c. à soupe) de farine tout usage non blanchie",
+      "250 ml (1 tasse) de bouillon de poulet",
+      "30 ml (2 c. à soupe) de moutarde à l’ancienne",
+      "60 ml (1/4 tasse) de crème 35 % "
+    ],
+    "steps": [
+        "Dans une grande poêle à feu moyen-élevé, dorer les côtelettes de porc dans l’huile. Saler et poivrer. Déposer dans la mijoteuse.",
+        "Dans la même poêle, dorer les oignons dans le gras de cuisson. Saupoudrer de la farine et bien mélanger. Ajouter le bouillon et la moutarde. Porter à ébullition en remuant. Saler et poivrer. Transvider dans la mijoteuse sur les côtelettes de porc.",
+        "Couvrir et cuire à basse température (Low) 5 heures.",
+        "Au moment de servir, ajouter la crème à la sauce. Répartir les côtelettes et la sauce dans des assiettes. Accompagner de salade verte ou de pâtes au beurre, si désiré."
+    ],
+    "images": {
+        "0001" : {
+            "id" : "0001",
+            "titre":"Vol de Ricardo"
+        }
+    
+
+    }
+  }
