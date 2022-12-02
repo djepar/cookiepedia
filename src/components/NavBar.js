@@ -1,5 +1,9 @@
 import Home from "./Home"
+<<<<<<< HEAD
 import Recipes from "./GeneratingRecipe/GeneratingRecipe";
+=======
+import Recipes from "./Recipes"
+>>>>>>> refs/remotes/origin/main
 import {Routes, Route, Link } from 'react-router-dom';
 import cookie from '../assets/images/cookie-logo.png';
 import AboutUs from './AboutUs'
