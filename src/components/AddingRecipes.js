@@ -22,7 +22,9 @@ function AddingRecipes() {
             recipeSteps
         );
     };
-
+    const handleListIngredients = (e) => {
+        setRecipeIngredients([...recipeIngredients, e.target.value])
+    }
     const clearForm = () => {
         setRecipeSource("");
         setRecipeSource({
@@ -46,7 +48,7 @@ function AddingRecipes() {
         <div className='App'>
             <form onSubmit={handleSubmit}>
                 <fieldset>
-                    <h2>Sign Up</h2>
+                    <h2>Adding a recipe</h2>
                     <div className='Field'>
                         <label>
                             Recipe name : <sup>*</sup>
@@ -73,23 +75,29 @@ function AddingRecipes() {
                     </div>
 
                     <div className='Field'>
+                        <h3>List of ingredients</h3>
                         <label>
-                            Recipe name : <sup>*</sup>
+                            Recipe Ingredients : <sup>*</sup>
                         </label>
                         <input
                         type='text'
                         value={recipeTitle}
-                        onChange={ (e) => {
-                            setRecipeTitle(e.target.value);
-                        }}
-                        placeholder='Recipe name' />
+                        placeholder='Recipe name' /> <br />
+                        <button type='submit'>Adding ingredients</button>
+                        <ul>
+                           { recipeIngredients.map(ingredient => (
+                                <li>ingredient</li>
+                            ))}
+                        </ul>
                     </div>
 
-
-
-
+{/* 
+                There is a problem with adding ingredients to the  */}
+                <button type='submit' onSubmit={handleListIngredients}>Adding a recipe</button>
                 </fieldset>
             </form>
         </div>
     )
 }
+
+export default AddingRecipes

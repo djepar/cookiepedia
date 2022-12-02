@@ -1,13 +1,10 @@
 import Home from "./Home"
-<<<<<<< HEAD
-import Recipes from "./GeneratingRecipe/GeneratingRecipe";
-=======
-import Recipes from "./Recipes"
->>>>>>> refs/remotes/origin/main
+import Recipes from "./GeneratingRecipe/GeneratingRecipe"
 import {Routes, Route, Link } from 'react-router-dom';
 import cookie from '../assets/images/cookie-logo.png';
 import AboutUs from './AboutUs'
 import './style/navbar.css'
+import GeneratingRecipe from "./GeneratingRecipe/GeneratingRecipe";
 function NavBar(){
     return(
         <div className="NavBar">
